@@ -24,7 +24,11 @@ process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
 // ========================================
 process.env.SEED = process.env.SEED || 'SEED_DEV';
 
+// ========================================
+//  google Client Id
+// ========================================
 
+process.env.CLIENT_ID = process.env.CLIENT_ID || '262131609543-lsin6rt41fb5cl8nftnaod76m8o25cgg.apps.googleusercontent.com';
 // ========================================
 //  BASE DE DATOS
 // ========================================
@@ -35,6 +39,8 @@ if (process.env.NODE_ENV === 'dev') {
 } else {
     urlBD = process.env.MONGO_URI;
 }
+
+
 
 //urlBD = 'mongodb+srv://garizato:j5kYtsLDzpu7AQhe@cluster0.mbeol.mongodb.net/cafe';
 
